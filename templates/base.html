@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+    <!-- ✅ This is the only place you link CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block head %}{% endblock %} 
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

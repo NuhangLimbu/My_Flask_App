@@ -1,0 +1,95 @@
+// =========================
+// Variables
+// =========================
+$primary-color: #3498db;
+$primary-hover-color: #52b929;
+$success-color: #28a745;
+$success-hover-color: #218838;
+$bg-color: #03fc7f;
+$title-color: #333;
+
+// =========================
+// Base Styles
+// =========================
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #b6fc03;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    color: $title-color;
+  }
+}
+
+// =========================
+// Table Styles
+// =========================
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+th {
+  background-color: #77fc03;
+  color: #333;
+}
+
+// =========================
+// Link Button (Anchor Tag)
+// =========================
+a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: $primary-color;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}
+
+// =========================
+// Input Fields
+// =========================
+input {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+// =========================
+// Success Button
+// =========================
+#btn_add {
+  background-color: $success-color;
+  color:red;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $success-hover-color;
+  }
+}
